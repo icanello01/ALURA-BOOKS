@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -42,10 +43,191 @@
             <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
     </header>
+
     <section class="banner">
             <h2 class="banner__titulo">Já sabe por onde começar?</h2>
             <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
             <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+    
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+        <div class="swiper-wrapper" data-swiper-autoplay="2000">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/ApacheKafka.svg" 
+                alt="Livro sobre Apache Kafka da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/Liderança.svg" 
+                alt="Livro sobre Liderança da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/Javascript.svg" 
+                alt="Livro sobre Javascript da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/Guia Front-end.svg" 
+                alt="Livro Guia Front-end da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/Portugol.svg" 
+                alt="Livro sobre Portugol da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/Acessibilidade.svg" 
+                alt="Livro sobre Acessibilidade da AluraBooks"></div>
+        ...
+        </div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar
+        <div class="swiper-scrollbar"></div> -->
+    </div>
+
+    <!-- Interesse -->
+    <div class="card">
+        <div class="card__descricao">
+            <div class="cdescricao">
+                <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                <p class="descricao__texto">Construindo aplicação integrada com a plataforma Google</p>
+            </div>
+            <img src="img/Angular.svg" class="descricao__imagem" alt="Livro Angular 11 e Firebase da AluraBooks">
+        </div>
+
+        <div class="card__botoes">
+            <ul class="botoes">
+                <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>               
+            </ul>
+
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+    </div>
+
+    <h2 class="carrossel__titulo">Mais Vedidos</h2>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+        <div class="swiper-wrapper" data-swiper-autoplay="2000">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/Javascript.svg" 
+                alt="Livro sobre Javascript da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/Liderança.svg" 
+                alt="Livro sobre Liderança da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/Guia Front-end.svg" 
+                alt="Livro Guia Front-end da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/ApacheKafka.svg" 
+                alt="Livro sobre ApacheKafka da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/Portugol.svg" 
+                alt="Livro sobre Portugol da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/Acessibilidade.svg" 
+                alt="Livro sobre Acessibilidade da AluraBooks"></div>
+        ...
+        </div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar
+        <div class="swiper-scrollbar"></div> -->
+    </div>
+
+    <!-- Autora do mês -->
+    <div class="card">
+        <div class="card__descricao">
+            <div class="cdescricao">
+                <div class="estrelinhas"><img src="img/estrelinhas.svg" alt="Estrelinhas autora do mês"></div>
+                <h3 class="descricao__titulo">Autora do Mês</h3>
+                <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-end</p>
+            </div>
+            <img src="img/Escritora.svg" class="descricao__imagem" alt="Autora do mês">
+        </div>
+
+        <div class="card__botoes">
+            <ul class="botoes">
+                <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>               
+            </ul>
+
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item"><a href="#" class="topicos__link">Android</a></li>
+            <li class="topicos__item"><a href="#" class="topicos__link">Marketing Digital</a></li>
+            <li class="topicos__item"><a href="#" class="topicos__link">Agile</a></li>
+            <li class="topicos__item"><a href="#" class="topicos__link">Startups</a></li>
+            <li class="topicos__item"><a href="#" class="topicos__link">HTML & CSS</a></li>
+            <li class="topicos__item"><a href="#" class="topicos__link">Python</a></li>
+            <li class="topicos__item"><a href="#" class="topicos__link">OO</a></li>
+            <li class="topicos__item"><a href="#" class="topicos__link">Java</a></li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
+        </form>
+    </section>
+
+    <hr/>
+
+    <footer class="rodape">
+        <div class="rodape__imagem">
+            <img src="img/Alura.svg" alt="Logo da AluraBooks" class="container__imagem-imagem">
+            <p class="rodape__titulo">Grupo Alura &copy; 2025</p>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: '3',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'bullets',
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: true,
+            },
+        });
+
+        swiper.el.addEventListener('mouseenter', () => {
+            swiper.autoplay.stop();
+        });
+
+        swiper.el.addEventListener('mouseleave', () => {
+            swiper.autoplay.start();
+        });
+    </script>
 </body>
 </html>
