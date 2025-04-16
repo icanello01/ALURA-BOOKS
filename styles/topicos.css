@@ -31,3 +31,15 @@
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+
+@media screen and (min-width: 1024px) {
+
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    .topicos__link {
+        font-size: 20px;
+    }
+}
+

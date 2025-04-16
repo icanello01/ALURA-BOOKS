@@ -65,3 +65,164 @@
 .container__botao {
     display: none;
 }
+
+.opcoes {
+    display: none;
+}
+
+.container__titulo /* , 
+.container__titulo--negrito */ {
+    display: none;
+}
+
+/* @media screen and (min-width: 1024px) {
+
+    .container__titulo, 
+    .container__titulo--negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem--transp {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburger {
+        display: none;
+    }
+
+    .opcoes__botao:checked~.lista-menu {
+        z-index: 10; 
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        display: block;
+        width: auto;
+    }
+
+    .lista-menu {
+        display: none;
+        position: absolute;
+        background-color: var(--branco);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.3s ease, z-index 0s 0.3s;
+        left: 44em;
+        top: 100%;
+        width: 60vw;
+    }
+
+    .opcoes__botao {
+        display: none;
+    } */
+     
+
+    @media screen and (min-width: 1024px) {
+
+        .container__titulo, 
+        .container__titulo--negrito {
+            font-family: var(--fonte-secundaria);
+            font-size: 30px;
+        }
+    
+        .container__titulo{
+            font-weight: 400;
+            display: block;
+        }
+    
+        .container__titulo--negrito{
+            font-weight: 700;
+        }
+    
+        .opcoes {
+            display: flex;
+        }
+    
+        .opcoes__item {
+            padding: 0 1em;
+            /* text-transform: uppercase; Removido daqui */
+        }
+    
+        /* Adiciona uppercase aos links do menu */
+        .opcoes__link {
+            text-decoration: none;
+            color: var(--preto);
+            text-transform: uppercase;
+        }
+    
+        .container__imagem--transp {
+            display: none;
+        }
+    
+        .cabecalho__menu-hamburger {
+            display: none;
+        }
+    
+        .opcoes__botao:checked~.lista-menu {
+            z-index: 10; 
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            display: block;
+            width: auto;
+        }
+    
+        .lista-menu {
+            display: none;
+            position: absolute;
+            background-color: var(--branco);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease, z-index 0s 0.3s;
+            left: 43em;
+            top: 100%;
+            width: 60vw;
+        }
+    
+        .opcoes__botao {
+            display: none;
+        }
+    
+        /* Regras para as setas */
+        .opcoes__item_aberto,
+        .opcoes__item_fechado {
+            text-transform: uppercase; /* Adiciona uppercase aos itens de seta */
+        }
+    
+        .opcoes__item_aberto {
+            display: none;
+        }
+    
+        .opcoes__botao:checked + label .opcoes__item_fechado {
+            display: none;
+        }
+    
+        .opcoes__botao:checked + label .opcoes__item_aberto {
+            display: block;
+        }
+    
+        .opcoes__botao:checked + label + .lista-menu {
+            display: block;
+        }
+    }
