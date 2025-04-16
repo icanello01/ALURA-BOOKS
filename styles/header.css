@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+    cursor: pointer;
 }
 
 .cabecalho {
@@ -208,6 +209,7 @@
         .opcoes__item_aberto,
         .opcoes__item_fechado {
             text-transform: uppercase; /* Adiciona uppercase aos itens de seta */
+            cursor: pointer;
         }
     
         .opcoes__item_aberto {

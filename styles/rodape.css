@@ -5,7 +5,62 @@ hr {
 .rodape {
     background-color: var(--branco);
     padding: 1em;
-    display: flex;
-    flex-direction: column;
     color: gray;
+    align-items: flex-start;
+}
+
+.rodape__titulo {
+    display: flex; /* Usa flexbox para centralizar os elementos */
+    align-items: center; /* Centraliza verticalmente */
+    /* justify-content: center;  */
+  }
+
+  .lista-rodape {
+    display: none;
+  }
+  
+  .rodape__titulo img {
+    margin-right: 10px; /* Espaço entre a imagem e o texto (opcional) */
+    margin-top: 0;
+  }
+
+/* .lista-rodape__item,
+.lista-rodape__link,
+.lista-rodape__titulo {
+    display: none;
+} */
+
+@media screen and (min-width: 1024px) {
+
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista-rodape {
+        display: block;
+      }
+      
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .lista-rodape__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cinza-claro);
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: 0.5em;
+    }
+
+    .lista-rodape__titulo {
+        font-size: 14px;
+        color: var(--cinza-claro);
+        text-transform: uppercase;
+    }
 }
