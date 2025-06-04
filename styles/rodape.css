@@ -64,3 +64,18 @@ hr {
         text-transform: uppercase;
     }
 }
+
+@media screen and (min-width: 1690px) {
+
+
+    .lista-rodape {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+      }
+
+    .rodape {
+        padding: 2.5em 0;
+      }
+      
+}
+
